@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - The Food Junction</title>
+  <link rel="stylesheet" href="public/css/styles.css">
+  <link rel="icon" href="public/images/favicon.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html" id="home-link">Home</a></li>
+        <li><a href="menu.html" id="menu-link">Menu</a></li>
+        <li><a href="reservation.html" id="reservation-link">Reservation</a></li>
+        <li><a href="contact.html" id="contact-link">Contact Us</a></li>
+	<li><a href="index.html" id="about-link">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="contact-info">
+      <h1>Let's talk</h1>
+      
+      <p>If you want to reserve a table in our restaurant, contact us and we will attend you quickly, with our 24/7 chat service.</p>
+    </section>
+    <section class="contact-action">
+      <button id="contactUsButton">Contact us now</button>
+    </section>
+    <section class="contact-form" id="contactForm" style="display: none;">
+      <form action="/submit-contact" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="contact">Contact Number:</label>
+        <input type="text" id="contact" name="contact" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="query">Query:</label>
+        <textarea id="query" name="query" required></textarea><br>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+  <script src="public/js/main.js"></script>
+</body>
+</html>
